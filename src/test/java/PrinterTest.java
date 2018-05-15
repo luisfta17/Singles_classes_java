@@ -20,14 +20,8 @@ public class PrinterTest {
     public void printPages(){
         printer.print(10, 5);
         assertEquals(50, printer.getSheets());
-    }
-
-    @Test
-    public void checkToner(){
-        printer.print(10, 5);
         assertEquals(450, printer.getToner());
     }
-
     @Test
     public void refillPages(){
         printer.refillPages();

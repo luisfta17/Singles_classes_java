@@ -9,8 +9,11 @@ public class WaterBottle {
         return this.volume;
     }
 
-    public int drink() {
-        return volume -= 10;
+    public void drink() {
+        if (this.volume >= 10){
+            this.volume -= 10;
+        }
+
     }
 
     public int emptyBottle() {

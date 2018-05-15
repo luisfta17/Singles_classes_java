@@ -9,12 +9,12 @@ public class CalculatorTest {
 
     @Before
     public void before(){
-        calculator = new Calculator(2, 1);
+        calculator = new Calculator(2.0, 1.0);
     }
 
     @Test
     public void hasNum1(){
-        assertEquals(2, calculator.getNumber1());
+        assertEquals(2, calculator.getNumber1(), 0.01);
     }
 
     @Test
